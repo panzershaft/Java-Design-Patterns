@@ -1,4 +1,3 @@
-/*
 ## What does it do ?
 
 1. Singleton pattern is a creational pattern which mandates use of just one object for a class,
@@ -28,5 +27,4 @@ ex: a single database object shared by different objects.
 3. Unit-testing can be difficult, in-case you are testing the functions using singleton-objects separately the
    the test will fail as just one object created by the first test will be used, this may cause the next texts
    to fail.
-
-*/
+   
