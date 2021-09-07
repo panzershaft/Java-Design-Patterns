@@ -9,10 +9,13 @@
 1. Make the default constructor as private, to prevent new objects to be created.
 2. Create a static method that calls the private constructor to create object, only if one already does not exist.
 
-## When to use it ?
+## When to use it ? or Why to use it ?
 
 In use-cases where you have common data which is shared by various aspects of your program,
 ex: a single database object shared by different objects.
+
+So in this case creating different object each time for other objects to use becomes difficult to 
+handle and causes mantainance issues. 
 
 ## Pros
 
