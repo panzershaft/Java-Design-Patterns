@@ -36,8 +36,10 @@ public class Runner {
 
             if (choice == 1){
                 GermanLightTank.orderTank("light");
+                System.out.println(GermanLightTank);
             }else {
                 GermanHeavyTank.orderTank("heavy");
+                System.out.println(GermanHeavyTank);
             }
         }
         else {
@@ -50,8 +52,10 @@ public class Runner {
 
             if (choice == 1){
                 RussianLightTank.orderTank("light");
+                System.out.println(RussianLightTank);
             }else {
                 RussianHeavyTank.orderTank("heavy");
+                System.out.println(RussianHeavyTank);
             }
         }
 

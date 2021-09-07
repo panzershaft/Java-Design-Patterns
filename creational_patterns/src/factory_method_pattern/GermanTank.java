@@ -13,4 +13,9 @@ public class GermanTank extends TankFactory{
         if(tankBuild.equals("heavy")) return new HeavyTank();
         else return null;
     }
+    @Override
+    public String toString(){
+        System.out.println("----------------- STATS FOR GERMAN TANK  -------------");
+        return super.toString() + "\n---------------------------------------------------------";
+    }
 }

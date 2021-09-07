@@ -13,4 +13,10 @@ public class RussianTank extends TankFactory{
         if(tankBuild.equals("heavy")) return new HeavyTank();
         else return null;
     }
+
+    @Override
+    public String toString(){
+        System.out.println("----------------- STATS FOR RUSSIAN TANK  -------------");
+        return super.toString() + "\n-------------------------------------------------------";
+    }
 }

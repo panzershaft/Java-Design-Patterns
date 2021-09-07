@@ -38,10 +38,10 @@ public abstract class TankFactory {
 
     public String toString(){
         return "Tank name: " + name  +
-                "\n Mass: " + mass +
-                "KG,\n Height: " + height +
-                " m,\n Length: " + length +
-                " m,\n Width: " + width +
-                 " m,\n Crew size: " + crew;
+                "\nMass: " + mass +
+                "KG,\nHeight: " + height +
+                " m,\nLength: " + length +
+                " m,\nWidth: " + width +
+                 " m,\nCrew size: " + crew;
     }
 }
