@@ -1,4 +1,6 @@
-package facade_pattern;
+package facade_pattern.client;
+
+import facade_pattern.facade.ShopFacade;
 
 public class UserClient {
     public static void main(String[] args){

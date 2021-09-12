@@ -1,6 +1,11 @@
-package factory_method;
+package factory_method.creator;
 
-public class RussianTank extends TankFactory{
+import factory_method.concrete_product.HeavyTank;
+import factory_method.concrete_product.LightTank;
+import factory_method.concrete_product.Tank;
+import factory_method.creator.TankFactory;
+
+public class RussianTank extends TankFactory {
 
 
     public RussianTank(String tankName, double mass, double length, double height, double width, int crew) {

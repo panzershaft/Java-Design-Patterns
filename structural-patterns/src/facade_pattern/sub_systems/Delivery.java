@@ -1,6 +1,6 @@
-package facade_pattern;
+package facade_pattern.sub_systems;
 
-public class Delivery implements OrderProcess{
+public class Delivery implements OrderProcess {
     public String type = "Delivery";
 
     public String toString(){

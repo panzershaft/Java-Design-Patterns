@@ -1,6 +1,11 @@
-package factory_method;
+package factory_method.creator;
 
-public class GermanTank extends TankFactory{
+import factory_method.concrete_product.HeavyTank;
+import factory_method.concrete_product.LightTank;
+import factory_method.concrete_product.Tank;
+import factory_method.creator.TankFactory;
+
+public class GermanTank extends TankFactory {
 
 
     public GermanTank(String tankName, double mass, double length, double height, double width, int crew) {

@@ -1,6 +1,6 @@
-package facade_pattern;
+package facade_pattern.facade;
 
-import javax.sound.midi.Soundbank;
+import facade_pattern.sub_systems.*;
 
 public class ShopFacade {
 

@@ -1,4 +1,7 @@
-package factory_method;
+package factory_method.creator;
+
+import factory_method.concrete_product.Tank;
+
 /*
 
 Creator class

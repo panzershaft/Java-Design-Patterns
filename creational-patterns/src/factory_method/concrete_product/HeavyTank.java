@@ -1,10 +1,11 @@
-package factory_method;
+package factory_method.concrete_product;
+
 /*
 
 Concrete Product
 
  */
-public class HeavyTank implements Tank{
+public class HeavyTank implements Tank {
     @Override
     public void accelerate( String tankName) {
         System.out.println(tankName + " accelerating");
