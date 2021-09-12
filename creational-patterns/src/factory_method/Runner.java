@@ -16,48 +16,49 @@ public class Runner {
         TankFactory RussianHeavyTank = new RussianTank(
                 "IS-3", 46500, 9.85, 2.45,  3.15, 4 );
 
-        Scanner Keyboard = new Scanner(System.in);
-        int choice;
-        do {
-            System.out.println("Please choose one the following options:");
-            System.out.println("1. German Tank");
-            System.out.println("2. Russian Tank");
-            choice = Keyboard.nextInt();
-
-        }while (!(choice == 1 || choice == 2));
-
-        if(choice == 1){
-            do {
-                System.out.println("Choose build type: ");
-                System.out.println("1. Panzerkampfwagen I (Light Tank)");
-                System.out.println("2. Panzerkampfwagen VI Tiger Ausf. E (Heavy Tank)");
-                choice = Keyboard.nextInt();
-            }while (!(choice == 1 || choice == 2));
-
-            if (choice == 1){
-                GermanLightTank.orderTank("light");
-                System.out.println(GermanLightTank);
-            }else {
-                GermanHeavyTank.orderTank("heavy");
-                System.out.println(GermanHeavyTank);
-            }
-        }
-        else {
-            do {
-                System.out.println("Choose build type: ");
-                System.out.println("1. BT-2 (Light Tank)");
-                System.out.println("2. IS-3 (Heavy Tank)");
-                choice = Keyboard.nextInt();
-            }while  (!(choice == 1 || choice == 2));
-
-            if (choice == 1){
-                RussianLightTank.orderTank("light");
-                System.out.println(RussianLightTank);
-            }else {
-                RussianHeavyTank.orderTank("heavy");
-                System.out.println(RussianHeavyTank);
-            }
-        }
+        GermanHeavyTank.orderTank("light");
+//        Scanner Keyboard = new Scanner(System.in);
+//        int choice;
+//        do {
+//            System.out.println("Please choose one the following options:");
+//            System.out.println("1. German Tank");
+//            System.out.println("2. Russian Tank");
+//            choice = Keyboard.nextInt();
+//
+//        }while (!(choice == 1 || choice == 2));
+//
+//        if(choice == 1){
+//            do {
+//                System.out.println("Choose build type: ");
+//                System.out.println("1. Panzerkampfwagen I (Light Tank)");
+//                System.out.println("2. Panzerkampfwagen VI Tiger Ausf. E (Heavy Tank)");
+//                choice = Keyboard.nextInt();
+//            }while (!(choice == 1 || choice == 2));
+//
+//            if (choice == 1){
+//                GermanLightTank.orderTank("light");
+//                System.out.println(GermanLightTank);
+//            }else {
+//                GermanHeavyTank.orderTank("heavy");
+//                System.out.println(GermanHeavyTank);
+//            }
+//        }
+//        else {
+//            do {
+//                System.out.println("Choose build type: ");
+//                System.out.println("1. BT-2 (Light Tank)");
+//                System.out.println("2. IS-3 (Heavy Tank)");
+//                choice = Keyboard.nextInt();
+//            }while  (!(choice == 1 || choice == 2));
+//
+//            if (choice == 1){
+//                RussianLightTank.orderTank("light");
+//                System.out.println(RussianLightTank);
+//            }else {
+//                RussianHeavyTank.orderTank("heavy");
+//                System.out.println(RussianHeavyTank);
+//            }
+//        }
 
     }
 }
