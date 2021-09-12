@@ -1,3 +1,24 @@
+## Project tree
+````
+├───creational-patterns
+│   └───src
+│       ├───factory_method
+│       │   ├───client
+│       │   ├───concrete_product
+│       │   └───creator
+│       └───singleton
+└───structural-patterns
+    └───src
+        ├───adapter_pattern
+        │   ├───adapters
+        │   ├───client
+        │   ├───imperial
+        │   └───metric
+        └───facade_pattern
+            ├───client
+            ├───facade
+            └───sub_systems
+````
 ## What are Design patterns ?
 
 - Design patterns are solutions to a commonly recurring problem in software design.
