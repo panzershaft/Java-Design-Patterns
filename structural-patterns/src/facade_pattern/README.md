@@ -7,7 +7,7 @@
   adding more functionality itself.
 
 
-## Blue-print to implement Factory Method
+## Blue-print to implement Facade Method
 - **Design the interface**: Create an interface that will implemented by different
   sub-system classes but not by the client class.
   
