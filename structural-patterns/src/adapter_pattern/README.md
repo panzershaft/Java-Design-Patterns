@@ -23,8 +23,8 @@
   
 ![img.png](img.png)
 ## Pros
-- Adheres to Single-responsibility principle: You can separate the interface or data conversion
+- **Adheres to Single-responsibility principle**: You can separate the interface or data conversion
   code from the primary business logic of the program.
   
-- Open/Close Principle: You cna introduce new types of adapters in program without breaking 
+- **Open/Close Principle**: You cna introduce new types of adapters in program without breaking 
   existing code, as long as they work with the adapters through the client interface. 
