@@ -14,10 +14,16 @@
         │   ├───client
         │   ├───imperial
         │   └───metric
+        ├───composite_pattern
+        │   ├───client
+        │   ├───composite
+        │   ├───Interfaces
+        │   └───leaf
         └───facade_pattern
             ├───client
             ├───facade
             └───sub_systems
+
 ````
 ## What are Design patterns ?
 
