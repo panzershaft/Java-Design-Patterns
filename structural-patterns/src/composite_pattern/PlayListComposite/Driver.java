@@ -36,19 +36,24 @@ public class Driver {
         System.out.println("-----------------------------------------------------");
 
         studyPlayList.add(experimentalPlaylist);
+        System.out.println("------------- STUDY + EXPERIMENTAl -------------");
+        studyPlayList.viewAlbums();
+        System.out.println("------------------------------------------------");
 
         Song glitchSong = new Song("Textuell", "Oval");
         float fasterSpeed = 1.2f;
         glitchSong.setPlaybackSpeed(fasterSpeed);
         glitchSong.play();
         String name = glitchSong.getName();
-        String artist = glitchSong.getName();
+        String artist = glitchSong.getArtists();
         System.out.println ("The song name is " + name );
         System.out.println ("The song artist is " + artist );
 
         // Add glitchSong to the "Study" playlist
         studyPlayList.add(glitchSong);
-
+        System.out.println("------------- STUDY + GLITCH PURE --------------");
+        studyPlayList.viewAlbums();
+        System.out.println("------------------------------------------------");
         // Play "Study" playlist.
         studyPlayList.play();
 

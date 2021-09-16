@@ -15,8 +15,10 @@ public class Playlist implements IComponent {
 
     @Override
     public void play() {
-        String message = "PLAYING: " + this.playlist;
-        System.out.println(message);
+        for(IComponent item : playlist){
+            if (item instanceof Playlist) item.getName();
+            else System.out.println( "PLAYING: " + item.getName());
+        }
     }
 
     @Override
@@ -40,14 +42,8 @@ public class Playlist implements IComponent {
 
     public void viewAlbums(){
         for(IComponent item : playlist){
-            if (item instanceof Playlist){
-                Playlist inner = (Playlist) item;
-                for(IComponent inner_item : inner.playlist){
-                    System.out.println(inner_item);
-                }
-            }
-            System.out.println(item);
+            if (item instanceof Playlist) ((Playlist) item).viewAlbums();
+            else System.out.println(item.toString());
         }
-
     }
 }
