@@ -1,6 +1,6 @@
-package composite_pattern.leaf;
+package composite_pattern.BuildingComposite.leaf;
 
-import composite_pattern.Interfaces.IStructure;
+import composite_pattern.BuildingComposite.Interfaces.IStructure;
 
 // leaf class
 public class Room implements IStructure {

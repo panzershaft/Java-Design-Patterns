@@ -1,6 +1,6 @@
-package composite_pattern.composite;
+package composite_pattern.BuildingComposite.composite;
 
-import composite_pattern.Interfaces.IStructure;
+import composite_pattern.BuildingComposite.Interfaces.IStructure;
 
 import java.util.ArrayList;
 

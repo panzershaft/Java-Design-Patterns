@@ -15,10 +15,14 @@
         │   ├───imperial
         │   └───metric
         ├───composite_pattern
-        │   ├───client
-        │   ├───composite
-        │   ├───Interfaces
-        │   └───leaf
+        │   ├───BuildingComposite
+        │   │   ├───composite
+        │   │   ├───Interfaces
+        │   │   └───leaf
+        │   └───PlayListComposite
+        │       ├───composite
+        │       ├───interfaces
+        │       └───leaf
         └───facade_pattern
             ├───client
             ├───facade

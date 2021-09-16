@@ -1,7 +1,7 @@
-package composite_pattern.client;
+package composite_pattern.BuildingComposite;
 
-import composite_pattern.composite.Housing;
-import composite_pattern.leaf.Room;
+import composite_pattern.BuildingComposite.composite.Housing;
+import composite_pattern.BuildingComposite.leaf.Room;
 
 public class Runner {
     public static void main(String[] args){
