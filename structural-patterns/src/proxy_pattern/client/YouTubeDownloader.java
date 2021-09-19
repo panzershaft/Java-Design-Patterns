@@ -24,9 +24,12 @@ public class YouTubeDownloader {
 
     public void renderPopularVideos(){
         HashMap<String, Video> list = api.popularVideos();
-        for (Video video : list.values()) {
-            System.out.println("ID: " + video.id + " / Title: " + video.title);
+        if(list != null){
+            for (Video video : list.values()) {
+                System.out.println("ID: " + video.id + " / Title: " + video.title);
+            }
         }
+
         System.out.println("-------------------------------\n");
     }
 }
