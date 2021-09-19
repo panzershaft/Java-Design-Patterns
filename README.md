@@ -32,9 +32,6 @@
             ├───interfaces
             ├───proxy
             └───real_classes
-
-
-
 ````
 ## What are Design patterns ?
 
