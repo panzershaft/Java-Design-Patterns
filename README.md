@@ -23,10 +23,17 @@
         │       ├───composite
         │       ├───interfaces
         │       └───leaf
-        └───facade_pattern
+        ├───facade_pattern
+        │   ├───client
+        │   ├───facade
+        │   └───sub_systems
+        └───proxy_pattern
             ├───client
-            ├───facade
-            └───sub_systems
+            ├───interfaces
+            ├───proxy
+            └───real_classes
+
+
 
 ````
 ## What are Design patterns ?
