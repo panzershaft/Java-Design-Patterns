@@ -14,8 +14,8 @@ public class GermanTank extends TankFactory {
 
     @Override
     public Tank manufactureTank(String tankBuild) {
-        if(tankBuild.equals("light")) return new LightTank();
-        if(tankBuild.equals("heavy")) return new HeavyTank();
+        if(tankBuild.equals("light")) return new LightTank(super.getName());
+        if(tankBuild.equals("heavy")) return new HeavyTank(super.getName());
         else return null;
     }
     @Override

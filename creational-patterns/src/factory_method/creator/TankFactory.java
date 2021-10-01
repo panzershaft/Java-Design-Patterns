@@ -26,17 +26,17 @@ public abstract class TankFactory {
        this.crew = crew;
    }
 
-    public Tank orderTank(String tankBuild){
+    public void orderTank(String tankBuild){
         Tank prototype = manufactureTank(tankBuild);
-        String tankName = TankFactory.this.name;
-        prototype.accelerate(tankName);
-        prototype.reverse(tankName);
-        prototype.fire(tankName);
-        prototype.halt(tankName);
-        prototype.rotateTurret(tankName);
-        return prototype;
+        prototype.accelerate();
+        prototype.reverse();
+        prototype.fire();
+        prototype.halt();
+        prototype.rotateTurret();
     }
-
+    public String getName() {
+        return name;
+    }
     public abstract Tank manufactureTank(String type);
 
     public String toString(){

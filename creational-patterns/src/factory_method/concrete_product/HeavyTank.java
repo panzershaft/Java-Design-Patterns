@@ -6,28 +6,33 @@ Concrete Product
 
  */
 public class HeavyTank implements Tank {
+    private String name;
+
+    public HeavyTank(String name){
+        this.name = name;
+    }
     @Override
-    public void accelerate( String tankName) {
-        System.out.println(tankName + " accelerating");
+    public void accelerate() {
+        System.out.println(name + "-> accelerating");
     }
 
     @Override
-    public void reverse( String tankName) {
-        System.out.println(tankName + " reversing");
+    public void reverse() {
+        System.out.println(name + "-> reversing");
     }
 
     @Override
-    public void fire( String tankName) {
-        System.out.println(tankName + "... FIRE THE CANNON!!!");
+    public void fire() {
+        System.out.println(name + "... FIRE THE CANNON!!!");
     }
 
     @Override
-    public void halt( String tankName) {
-        System.out.println(tankName + " halting");
+    public void halt() {
+        System.out.println(name + "-> halting");
     }
 
     @Override
-    public void rotateTurret( String tankName) {
-        System.out.println(tankName + "Rotating the turret");
+    public void rotateTurret() {
+        System.out.println(name + "-> Rotating the turret");
     }
 }
