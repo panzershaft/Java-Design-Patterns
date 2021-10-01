@@ -5,9 +5,9 @@ Interface
 
  */
 public interface Tank {
-    void accelerate(String tankName);
-    void reverse(String tankName);
-    void fire(String tankName);
-    void halt(String tankName);
-    void rotateTurret(String tankName);
+    void accelerate();
+    void reverse();
+    void fire();
+    void halt();
+    void rotateTurret();
 }

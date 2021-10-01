@@ -8,12 +8,12 @@ Creator class
 
  */
 public abstract class TankFactory {
-    private String name;
-    private double length;
-    private double mass;
-    private double height;
-    private double width;
-    private int crew;
+    private final String name;
+    private final double length;
+    private final double mass;
+    private final double height;
+    private final double width;
+    private final int crew;
 
    public TankFactory(String tankName,  double mass, double length, double height,
                       double width,
@@ -26,17 +26,17 @@ public abstract class TankFactory {
        this.crew = crew;
    }
 
-    public Tank orderTank(String tankBuild){
+    public void orderTank(String tankBuild){
         Tank prototype = manufactureTank(tankBuild);
-        String tankName = TankFactory.this.name;
-        prototype.accelerate(tankName);
-        prototype.reverse(tankName);
-        prototype.fire(tankName);
-        prototype.halt(tankName);
-        prototype.rotateTurret(tankName);
-        return prototype;
+        prototype.accelerate();
+        prototype.reverse();
+        prototype.fire();
+        prototype.halt();
+        prototype.rotateTurret();
     }
-
+    public String getName() {
+        return name;
+    }
     public abstract Tank manufactureTank(String type);
 
     public String toString(){

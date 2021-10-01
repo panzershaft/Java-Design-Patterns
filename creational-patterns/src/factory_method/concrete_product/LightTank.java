@@ -6,28 +6,34 @@ Concrete Product
 
  */
 public class LightTank implements Tank {
-    @Override
-    public void accelerate(String tankName) {
-        System.out.println(tankName + " accelerating");
+    private String name;
+
+    public LightTank(String name){
+        this.name = name;
     }
 
     @Override
-    public void reverse(String tankName) {
-        System.out.println(tankName + " reversing");
+    public void accelerate() {
+        System.out.println(name + "-> accelerating");
     }
 
     @Override
-    public void fire(String tankName) {
-        System.out.println(tankName + "... FIRE THE CANNON!!!");
+    public void reverse() {
+        System.out.println(name + "-> reversing");
     }
 
     @Override
-    public void halt(String tankName) {
-        System.out.println(tankName + " halting");
+    public void fire() {
+        System.out.println(name + "-> FIRE THE CANNON!!!");
     }
 
     @Override
-    public void rotateTurret(String tankName) {
-        System.out.println(tankName + " rotating the turret");
+    public void halt() {
+        System.out.println(name + "-> halting");
+    }
+
+    @Override
+    public void rotateTurret() {
+        System.out.println(name + "-> rotating the turret");
     }
 }
