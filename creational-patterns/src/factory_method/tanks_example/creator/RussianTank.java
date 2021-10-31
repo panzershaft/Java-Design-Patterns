@@ -1,8 +1,8 @@
-package factory_method.tanks_example.client.creator;
+package factory_method.tanks_example.creator;
 
-import factory_method.tanks_example.client.concrete_product.HeavyTank;
-import factory_method.tanks_example.client.concrete_product.LightTank;
-import factory_method.tanks_example.client.concrete_product.Tank;
+import factory_method.tanks_example.concrete_product.HeavyTank;
+import factory_method.tanks_example.concrete_product.LightTank;
+import factory_method.tanks_example.concrete_product.Tank;
 
 public class RussianTank extends TankFactory {
 

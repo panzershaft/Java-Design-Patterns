@@ -1,8 +1,8 @@
 package factory_method.tanks_example.client;
 
-import factory_method.tanks_example.client.creator.GermanTank;
-import factory_method.tanks_example.client.creator.RussianTank;
-import factory_method.tanks_example.client.creator.TankFactory;
+import factory_method.tanks_example.creator.GermanTank;
+import factory_method.tanks_example.creator.RussianTank;
+import factory_method.tanks_example.creator.TankFactory;
 
 import java.util.Scanner;
 
