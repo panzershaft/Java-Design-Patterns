@@ -1,16 +1,17 @@
-package factory_method.concrete_product;
+package factory_method.tanks_example.client.concrete_product;
 
 /*
 
 Concrete Product
 
  */
-public class HeavyTank implements Tank {
+public class LightTank implements Tank {
     private String name;
 
-    public HeavyTank(String name){
+    public LightTank(String name){
         this.name = name;
     }
+
     @Override
     public void accelerate() {
         System.out.println(name + "-> accelerating");
@@ -23,7 +24,7 @@ public class HeavyTank implements Tank {
 
     @Override
     public void fire() {
-        System.out.println(name + "... FIRE THE CANNON!!!");
+        System.out.println(name + "-> FIRE THE CANNON!!!");
     }
 
     @Override
@@ -33,6 +34,6 @@ public class HeavyTank implements Tank {
 
     @Override
     public void rotateTurret() {
-        System.out.println(name + "-> Rotating the turret");
+        System.out.println(name + "-> rotating the turret");
     }
 }

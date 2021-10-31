@@ -1,9 +1,8 @@
-package factory_method.creator;
+package factory_method.tanks_example.client.creator;
 
-import factory_method.concrete_product.HeavyTank;
-import factory_method.concrete_product.LightTank;
-import factory_method.concrete_product.Tank;
-import factory_method.creator.TankFactory;
+import factory_method.tanks_example.client.concrete_product.HeavyTank;
+import factory_method.tanks_example.client.concrete_product.LightTank;
+import factory_method.tanks_example.client.concrete_product.Tank;
 
 public class GermanTank extends TankFactory {
 

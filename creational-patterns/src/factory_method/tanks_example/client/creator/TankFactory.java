@@ -1,6 +1,6 @@
-package factory_method.creator;
+package factory_method.tanks_example.client.creator;
 
-import factory_method.concrete_product.Tank;
+import factory_method.tanks_example.client.concrete_product.Tank;
 
 /*
 

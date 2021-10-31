@@ -1,4 +1,4 @@
-package factory_method.concrete_product;
+package factory_method.tanks_example.client.concrete_product;
 /*
 
 Interface
